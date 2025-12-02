@@ -1,0 +1,37 @@
+<div class="detail-card">
+  <h2 class="detail-title">Dettaglio Gioco</h2>
+
+  <div class="error" *ngIf="error">{{ error }}</div>
+
+  <ng-container *ngIf="game$ | async as game; else loadingTpl">
+    <ng-container *ngIf="game; else notFoundTpl">
+      <p><span class="label">Titolo:</span> {{ game.title }}</p>
+      <p><span class="label">Piattaforma:</span> {{ game.platform }}</p>
+      <p><span class="label">Genere:</span> {{ game.genre || '—' }}</p>
+
+      <h3 class="section-title">💡 Tips</h3>
+      <ul class="tips-list">
+        <li *ngFor="let tip of game.tips">{{ tip }}</li>
+      </ul>
+
+      <h3 class="section-title">💾 Salvataggi</h3>
+      <ul class="saves-list">
+        <li *ngFor="let s of game.saves">
+          <strong>{{ s.name }}</strong><span *ngIf="s.note"> — {{ s.note }}</span>
+        </li>
+      </ul>
+
+      <a routerLink="/">
+        <button class="nav-button">⬅ Torna ai Giochi</button>
+      </a>
+    </ng-container>
+  </ng-container>
+
+  <ng-template #loadingTpl>
+    <div class="loading">Caricamento…</div>
+  </ng-template>
+
+  <ng-template #notFoundTpl>
+    <div class="error">Gioco non trovato</div>
+  </ng-template>
+</div>

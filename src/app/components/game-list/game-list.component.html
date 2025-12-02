@@ -1,0 +1,11 @@
+<div class="game-list">
+  <div class="game-card" *ngFor="let game of games$ | async">
+    <h3 class="game-title">{{ game.title }}</h3>
+    <p class="game-platform">Piattaforma: {{ game.platform }}</p>
+    <p class="game-genre">Genere: {{ game.genre }}</p>
+
+    <a [routerLink]="['/detail', game.id]">
+      <button class="nav-button">Dettagli</button>
+    </a>
+  </div>
+</div>

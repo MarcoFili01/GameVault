@@ -1,0 +1,58 @@
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* griglia responsiva */
+  gap: 20px;              /* spazio tra i quadrati */
+  padding: 20px;
+}
+
+.game-card {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;          /* quadrato */
+  padding: 16px;
+}
+
+.game-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+.game-title {
+  font-size: 1.2rem;
+  color: #c9c6b3; /* verde neon */
+  margin-bottom: 6px;
+}
+
+.game-platform {
+  color: #6898ab; /* azzurro elettrico */
+  font-weight: bold;
+}
+
+.game-genre {
+  color: #88c7df; /* viola acceso */
+  font-style: bold;
+}
+
+.nav-button {
+  background: linear-gradient(90deg, #556e78, #90a1a3);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: auto;       /* spinge il bottone in basso */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.nav-button:hover {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px white;
+}

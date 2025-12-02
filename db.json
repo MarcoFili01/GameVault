@@ -1,0 +1,173 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "Elden Ring",
+      "platform": "PC, PlayStation, Xbox",
+      "genre": "Action RPG",
+      "tips": [
+        "Esplora ogni angolo per trovare segreti",
+        "Potenzia le armi con le ceneri di guerra",
+        "Studia i pattern dei boss"
+      ],
+      "saves": [
+        { "name": "Avventura principale", "note": "Livello 50" },
+        { "name": "Build magica", "note": "Incantesimi potenziati" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Hades",
+      "platform": "PC, Switch",
+      "genre": "Roguelike",
+      "tips": [
+        "Sperimenta diverse armi",
+        "Combina i doni degli dei",
+        "Usa la schivata per evitare danni"
+      ],
+      "saves": [
+        { "name": "Run con spada", "note": "Boss Megara battuta" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Stardew Valley",
+      "platform": "PC, Switch, Mobile",
+      "genre": "Simulation",
+      "tips": [
+        "Pianifica le stagioni per coltivare",
+        "Partecipa agli eventi del villaggio",
+        "Pesca per guadagnare oro extra"
+      ],
+      "saves": [
+        { "name": "Fattoria Sole", "note": "Anno 2" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Fortnite",
+      "platform": "PC, Console, Mobile",
+      "genre": "Battle Royale",
+      "tips": [
+        "Costruisci strutture per difenderti",
+        "Atterra in zone meno affollate",
+        "Gestisci bene le risorse"
+      ],
+      "saves": [
+        { "name": "Stagione 5", "note": "Skin sbloccata" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "League of Legends",
+      "platform": "PC",
+      "genre": "MOBA",
+      "tips": [
+        "Comunica con il team",
+        "Controlla la visione con ward",
+        "Adatta la build al nemico"
+      ],
+      "saves": [
+        { "name": "Ranked", "note": "Silver II" }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Animal Crossing: New Horizons",
+      "platform": "Nintendo Switch",
+      "genre": "Simulation",
+      "tips": [
+        "Parla con i vicini ogni giorno",
+        "Colleziona risorse per craftare",
+        "Personalizza l’isola con creatività"
+      ],
+      "saves": [
+        { "name": "Isola Relax", "note": "Museo completato" }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Cyberpunk 2077",
+      "platform": "PC, Console",
+      "genre": "RPG",
+      "tips": [
+        "Potenzia i cyberware",
+        "Sfrutta le missioni secondarie",
+        "Usa hack rapidi contro i nemici"
+      ],
+      "saves": [
+        { "name": "Campagna principale", "note": "Atto 2" }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Hollow Knight",
+      "platform": "PC, Switch",
+      "genre": "Metroidvania",
+      "tips": [
+        "Esplora con calma ogni area",
+        "Potenzia i charm per adattarti",
+        "Studia i boss prima di attaccare"
+      ],
+      "saves": [
+        { "name": "Avventura", "note": "Città delle Lacrime" }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Super Smash Bros. Ultimate",
+      "platform": "Nintendo Switch",
+      "genre": "Fighting",
+      "tips": [
+        "Impara le combo dei personaggi",
+        "Usa gli oggetti con tempismo",
+        "Sfrutta le arene a tuo vantaggio"
+      ],
+      "saves": [
+        { "name": "Partite con amici", "note": "Mario vs Link" }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Red Dead Redemption 2",
+      "platform": "PC, PlayStation, Xbox",
+      "genre": "Adventure",
+      "tips": [
+        "Cura il cavallo regolarmente",
+        "Esplora per trovare missioni nascoste",
+        "Gestisci l’onore per influenzare la storia"
+      ],
+      "saves": [
+        { "name": "Storia", "note": "Capitolo 3" }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Dark Souls III",
+      "platform": "PC, PlayStation, Xbox",
+      "genre": "Action RPG",
+      "tips": [
+        "Studia i nemici prima di attaccare",
+        "Usa falò per gestire risorse",
+        "Potenzia armi e armature"
+      ],
+      "saves": [
+        { "name": "Run principale", "note": "Boss Abyss Watchers" }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "The Witcher 3: Wild Hunt",
+      "platform": "PC, PlayStation, Xbox, Switch",
+      "genre": "RPG",
+      "tips": [
+        "Usa i segni in combattimento",
+        "Completa missioni secondarie per ricompense",
+        "Studia i mostri prima di affrontarli"
+      ],
+      "saves": [
+        { "name": "Avventura di Geralt", "note": "Novigrad" }
+      ]
+    }
+  ]
+}

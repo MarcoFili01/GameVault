@@ -1,0 +1,40 @@
+<div class="card">
+  <h2>Aggiungi gioco e salvataggi</h2>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <label>Titolo</label>
+    <input formControlName="title" placeholder="Es. Minecraft">
+    <div class="error" *ngIf="form.get('title')?.touched && form.get('title')?.invalid">
+      Titolo obbligatorio (min 2 caratteri).
+    </div>
+
+    <label>Piattaforma</label>
+    <input formControlName="platform" placeholder="Es. PC, Switch, PS5">
+    <div class="error" *ngIf="form.get('platform')?.touched && form.get('platform')?.invalid">
+      Piattaforma obbligatoria.
+    </div>
+
+    <label>Genere (opzionale)</label>
+    <input formControlName="genre" placeholder="Es. Sandbox, Party, RPG">
+
+    <h3>Tips</h3>
+    <div *ngFor="let tipCtrl of tips.controls; let i = index">
+      <input [formControl]="tipCtrl" placeholder="Inserisci tip">
+      <button type="button" class="secondary" (click)="removeTip(i)">Rimuovi tip</button>
+    </div>
+    <button type="button" (click)="addTip()">+ Aggiungi tip</button>
+
+    <h3 style="margin-top:16px;">Salvataggi</h3>
+    <div *ngFor="let saveGroup of saves.controls; let i = index" [formGroup]="saveGroup">
+      <input formControlName="name" placeholder="Nome salvataggio (es. Mondo Survival)">
+      <input formControlName="note" placeholder="Nota (opzionale)">
+      <button type="button" class="secondary" (click)="removeSave(i)">Rimuovi salvataggio</button>
+    </div>
+    <button type="button" (click)="addSave()">+ Aggiungi salvataggio</button>
+
+    <div style="margin-top:16px; display:flex; gap:8px;">
+      <button type="submit">Salva</button>
+      <button type="button" class="secondary" (click)="cancel()">Annulla</button>
+    </div>
+  </form>
+</div>
